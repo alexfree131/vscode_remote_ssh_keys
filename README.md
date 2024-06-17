@@ -49,7 +49,7 @@ This guide provides step-by-step instructions to connect to a Linux Proxmox host
 
     ```sh
     Host proxmox
-        HostName 192.168.178.31
+        HostName 192.168.0.11
         User your_username
         IdentityFile ~/.ssh/id_rsa
     ```
@@ -73,14 +73,14 @@ You should now be connected to your Proxmox host via VSCode and able to work rem
 2. **Add Public Key to Remote Host:**
 
     ```sh
-    ssh-copy-id your_username@192.168.178.31
+    ssh-copy-id your_username@192.168.0.11
     ```
 
 3. **VSCode SSH Configuration:**
 
     ```sh
     Host proxmox
-        HostName 192.168.178.31
+        HostName 192.168.0.11
         User your_username
         IdentityFile ~/.ssh/id_rsa
     ```
